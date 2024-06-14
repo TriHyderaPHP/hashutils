@@ -2,6 +2,14 @@
 
 Tools for hashing text and getting an user hash with simple classes
 
+# Getting started
+
+Require this package, with [Composer](https://getcomposer.org), in the root directory of your project.
+
+```bash
+composer require trihydera/hashutils
+```
+
 # HashID Class
 
 ## Overview
