@@ -6,6 +6,7 @@ namespace Hashutils;
  * Handles generating and verifying hashed IDs.
  */
 class HashID {
+     /*
  @var string The salt value used for hashing.
      */
     private $salt;

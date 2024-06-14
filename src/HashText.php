@@ -6,6 +6,7 @@ namespace Hashutils;
  * Handles hashing text content using different algorithms.
  */
 class HashText {
+     /*
  @var string The salt value used for hashing.
      */
     private $salt;
