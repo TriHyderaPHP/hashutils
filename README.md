@@ -1,6 +1,6 @@
 # Intro
 
-Tools for hashing text and getting an user hash with simple classes
+A simple PHP library for hashing text, getting and verifying an user hash
 
 # Getting started
 
