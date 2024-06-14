@@ -1,0 +1,19 @@
+{
+    "name": "trihydera/hashutils",
+    "description": "Tools for hashing text and getting an user hash",
+    "type": "library",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "Hashutils\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "TriHydera",
+            "email": "39857764+TriHydera@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
