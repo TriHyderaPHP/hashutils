@@ -1,6 +1,11 @@
 {
     "name": "trihydera/hashutils",
     "description": "Tools for hashing text and getting an user hash",
+    "tags": ["hashing", "encrypting", "security", "user id"],
+    "repository": {
+       "type": "git",
+        "url": "https://github.com/TriHydera/hashutils"
+  },
     "type": "library",
     "license": "GPL",
     "autoload": {
