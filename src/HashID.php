@@ -7,11 +7,6 @@ namespace Hashutils;
  */
 class HashID {
      /*
- @var string The salt value used for hashing.
-     */
-    private $salt;
-
-     /*
  @var string The hash class.
      */
     private $hash;
@@ -22,8 +17,7 @@ class HashID {
      * @param string $salt The salt value for hashing (default is '0').
      */
     public function __construct($salt = '0') {
-        $this->salt = $salt;
-        $this->hash = new Hashutils/HashText;
+        $this->hash = new Hashutils/HashText($salt);
     }
 
     /**
