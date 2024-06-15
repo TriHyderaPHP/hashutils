@@ -11,6 +11,11 @@ class HashID {
      */
     private $salt;
 
+     /*
+ @var string The hash class.
+     */
+    private $hash;
+
     /**
      * HashID constructor.
      *
@@ -18,6 +23,7 @@ class HashID {
      */
     public function __construct($salt = '0') {
         $this->salt = $salt;
+        $this->hash = new Hashutils/HashText;
     }
 
     /**
