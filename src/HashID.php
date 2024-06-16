@@ -1,5 +1,5 @@
 <?php
-namespace Hashutils;
+namespace Trihydera\Hashutils;
 
 /**
  * Class HashID

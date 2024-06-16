@@ -10,7 +10,7 @@
     "license": "GPL-2.0-only",
     "autoload": {
         "psr-4": {
-            "Hashutils\\": "src/"
+            "Trihydera\\Hashutils\\": "src/"
         }
     },
     "authors": [

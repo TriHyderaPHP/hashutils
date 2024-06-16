@@ -23,7 +23,7 @@ The `HashID` class is designed to handle generating and verifying hashed user ID
 ## Example
 ```php
 <?php
-use Hashutils\HashID;
+use Trihydera\Hashutils\HashID;
 
 // Instantiate HashID class
 $hashId = new HashID('mysalt');
@@ -51,7 +51,7 @@ You can include the `HashText` class in your project by requiring the relevant P
 ## Example
 ```php
 <?php
-use Hashutils\HashText;
+use Trihydera\Hashutils\HashText;
 
 // Instantiate HashText class with a custom salt
 $hashText = new HashText('mysalt');
