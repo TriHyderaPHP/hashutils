@@ -17,7 +17,7 @@ class HashID {
      * @param string $salt The salt value for hashing (default is '0').
      */
     public function __construct($salt = '0') {
-        $this->hash = new Hashutils/HashText($salt);
+        $this->hash = new HashText($salt);
     }
 
     /**
