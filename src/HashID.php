@@ -1,14 +1,15 @@
 <?php
+
 namespace Trihydera\Hashutils;
 
 /**
- * Class HashID
  * Handles generating and verifying hashed IDs.
  */
-class HashID {
-     /*
+class HashID
+{
+    /*
  @var string The hash class.
-     */
+    */
     private $hash;
 
     /**
@@ -16,7 +17,8 @@ class HashID {
      *
      * @param string $salt The salt value for hashing (default is '0').
      */
-    public function __construct($salt = '0') {
+    public function __construct($salt = '0')
+    {
         $this->hash = new HashText($salt);
     }
 
@@ -25,7 +27,8 @@ class HashID {
      *
      * @return string The generated hashed ID.
      */
-    public function gen() {
+    public function gen()
+    {
         $ip = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : 'N/A';
         return $this->hash->gen($ip);
     }
@@ -36,9 +39,9 @@ class HashID {
      * @param string $hash The hash to verify against the generated hash.
      * @return bool True if the hash matches, false otherwise.
      */
-    public function verify($hash) {
+    public function verify($hash)
+    {
         $gen = $this->gen();
         return $gen == $hash ? true : false;
     }
 }
-?>

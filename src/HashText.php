@@ -1,14 +1,15 @@
 <?php
+
 namespace Trihydera\Hashutils;
 
 /**
- * Class HashText
  * Handles hashing text content using different algorithms.
  */
-class HashText {
-     /*
+class HashText
+{
+    /*
  @var string The salt value used for hashing.
-     */
+    */
     private $salt;
 
     /**
@@ -16,7 +17,8 @@ class HashText {
      *
      * @param string $salt The salt value for hashing (default is '0').
      */
-    public function __construct($salt = '0') {
+    public function __construct($salt = '0')
+    {
         $this->salt = $salt;
     }
 
@@ -26,7 +28,8 @@ class HashText {
      * @param string $content The content to be hashed.
      * @return string The generated hash string.
      */
-    public function gen($content) {
+    public function gen($content)
+    {
         $super = [];
         $algos = ['md5', 'sha256'];
 
@@ -38,4 +41,3 @@ class HashText {
         return implode('', $super);
     }
 }
-?>
